@@ -1,6 +1,6 @@
 # Debian 9 (Stretch) Base Image
 
-![](https://img.shields.io/docker/automated/pandemonium1986/debian9)
+![](https://img.shields.io/docker/build/pandemonium1986/debian9)
 ![](https://img.shields.io/microbadger/image-size/pandemonium1986/debian9)
 ![](https://img.shields.io/github/release/Pandemonium1986/docker-debian9.svg)
 ![](https://img.shields.io/github/release-date/Pandemonium1986/docker-debian9.svg)

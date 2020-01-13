@@ -10,7 +10,7 @@ Debian 9 (Stretch) docker image. Built to be like my vagrant box to be able to t
 
 ## Tags
 
--   `latest`: Latest version of the debian9 base image.
+-   `latest`: Latest version of the debian 9 base image.
 
 ## How to Build
 
@@ -18,13 +18,13 @@ This image is built on Docker Hub automatically any time the upstream OS contain
 
 1.  [Install Docker](https://docs.docker.com/engine/installation/).
 2.  `cd` into this directory.
-3.  Run `docker build -t debian9-pdm .`
+3.  Run `docker build -t localhost/debian9:test .`
 
 ## How to Use
 
 1.  [Install Docker](https://docs.docker.com/engine/installation/).
-2.  Pull this image from Docker Hub: `docker pull pandemonium1986/debian9:latest` (or use the image you built earlier, e.g. `debian9-pdm`).
-3.  Run a container from the image: `docker run --detach --privileged pandemonium1986/debian9:latest`.
+2.  Pull this image from Docker Hub: `docker pull pandemonium1986/debian9:latest` (or use the image you built earlier, e.g. `localhost/debian9:test`).
+3.  Run a container from the image: `docker run --detach --privileged --name debian9-pdm-hub pandemonium1986/debian9:latest `.
 
 ## Author Information
 

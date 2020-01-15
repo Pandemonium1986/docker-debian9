@@ -16,4 +16,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean
 
+
+VOLUME ["/sys/fs/cgroup"]
+
 CMD ["/lib/systemd/systemd"]

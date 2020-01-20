@@ -27,4 +27,4 @@ This image is built on Docker Hub automatically any time the upstream OS contain
 
 ## Author Information
 
--   **Michael Maffait** - _Initial work_ - [Pandemonium1986]\(<https://github.com/Pandemonium1986>
+-   **Michael Maffait** - _Initial work_ - [Pandemonium1986](https://github.com/Pandemonium1986)

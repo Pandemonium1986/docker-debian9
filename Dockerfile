@@ -1,5 +1,7 @@
 FROM debian:stretch
+
 LABEL maintainer="Michael Maffait"
+LABEL org.opencontainers.image.source="https://github.com/Pandemonium1986/docker-debian9"
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -16,6 +18,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean
 
+WORKDIR /
 
 VOLUME ["/sys/fs/cgroup"]
 

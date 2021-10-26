@@ -9,6 +9,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
       build-essential \
+      locales \
       openssh-server \
       python-dev \
       python-pip \
@@ -17,6 +18,10 @@ RUN apt-get update && \
       systemd && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean
+
+ENV LC_ALL en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
 
 WORKDIR /
 

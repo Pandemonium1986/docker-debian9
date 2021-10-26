@@ -10,6 +10,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
       build-essential \
       locales \
+      locales-all \
       openssh-server \
       python-dev \
       python-pip \

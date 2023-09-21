@@ -5,6 +5,8 @@ LABEL org.opencontainers.image.source="https://github.com/Pandemonium1986/docker
 
 ENV DEBIAN_FRONTEND noninteractive
 
+COPY sources.list /etc/apt/sources.list
+
 # Install dependencies.
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \

@@ -26,10 +26,10 @@ jobs:
         with:
           fetch-depth: 0
       - name: "Prepare => Get the current branch"
-        run: echo CURRENT_BRANCH=${GITHUB_REF/refs\/heads\//} >> $GITHUB_ENV
+        run: echo CURRENT_BRANCH="${GITHUB_REF/refs\/heads\//}" >> "$GITHUB_ENV"
       - name: "Prepare => Get the current tag"
         if: ${{ github.event_name == 'release' }}
-        run: echo CURRENT_BRANCH=${GITHUB_REF/refs\/tags\//} >> $GITHUB_ENV
+        run: echo CURRENT_BRANCH="${GITHUB_REF/refs\/tags\//}" >> "$GITHUB_ENV"
       - name: "GitHub => Lint Dockerfile"
         uses: github/super-linter@v4
         env:
